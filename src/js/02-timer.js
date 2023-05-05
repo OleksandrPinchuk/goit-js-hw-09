@@ -36,19 +36,17 @@ flatpickr("input#datetime-picker", options);
 const timer = {
     start() {
         const startTime = Date.now();
-        console.log(startTime)
 
         setInterval(() => {
             const currentTime = Date.now();
             const deltaTime = selectedTime - currentTime;
             const { days, hours, minutes, seconds } = convertMs(deltaTime);
-            console.log(`${days},${hours},${minutes},${seconds}`)
             updateTimerface({ days, hours, minutes, seconds });
         }, 1000);
     },
-}
+};
 
-refs.startBtn.addEventListener("click", timer.start());
+refs.startBtn.addEventListener("click", timer.start);
 
 
 function convertMs(ms) {

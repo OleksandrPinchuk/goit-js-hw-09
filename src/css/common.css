@@ -19,10 +19,12 @@ img {
 
 .timer {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
   margin-top: 30px;
   justify-content: center;
+  font-size: 24px;
+
 }
 
 /* 
